@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Portfolio of Sreejith Bijukumar, B.Sc Nursing student. Specialized in medical-surgical, pediatric, community, obstetrics, and psychiatric nursing.">
+  <meta name="author" content="Sreejith Bijukumar">
+  <title>Sreejith Bijukumar | B.Sc Nursing Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated EKG grid and waveform -->
+  <div class="ekg-container" aria-hidden="true">
+    <div class="ekg-grid"></div>
+    <svg class="ekg-svg" viewBox="0 0 1400 400" preserveAspectRatio="none">
+      <path class="ekg-line-bg" d="M0,200 L300,200 L320,180 L340,220 L360,200 L450,200 L470,100 L490,300 L510,180 L530,210 L550,200 L850,200 L870,180 L890,220 L910,200 L1000,200 L1020,100 L1040,300 L1060,180 L1080,210 L1100,200 L1400,200"></path>
+      <path class="ekg-line-pulse" d="M0,200 L300,200 L320,180 L340,220 L360,200 L450,200 L470,100 L490,300 L510,180 L530,210 L550,200 L850,200 L870,180 L890,220 L910,200 L1000,200 L1020,100 L1040,300 L1060,180 L1080,210 L1100,200 L1400,200"></path>
+    </svg>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon"><i data-lucide="heart-pulse"></i></span>
+        <span class="logo-text">Sreejith<span>.B</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Clinical Rotations</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications & Research</a>
+        <a href="#contact" class="nav-link btn-contact">Contact</a>
+      </nav>
+
+      <!-- Theme and Menu Buttons -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="nav-btn-icon" aria-label="Toggle dark/light mode">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button id="menu-toggle" class="nav-btn-icon mobile-menu-toggle" aria-label="Open navigation menu">
+          <i data-lucide="menu" class="menu-open-icon"></i>
+          <i data-lucide="x" class="menu-close-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <nav class="drawer-links">
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#experience" class="drawer-link">Clinical Rotations</a>
+      <a href="#education" class="drawer-link">Education</a>
+      <a href="#certifications" class="drawer-link">Certifications & Research</a>
+      <a href="#contact" class="drawer-link btn-contact-drawer">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content text-reveal">
+        <div class="badge-accent"><i data-lucide="activity"></i> Future Nursing Professional</div>
+        <h1 class="hero-title">
+          Compassionate Care & <br>
+          <span class="gradient-text">Clinical Excellence</span>
+        </h1>
+        <p class="hero-subtitle">
+          Hello, I'm <strong>Sreejith Bijukumar</strong>. A dedicated B.Sc Nursing student seeking clinical internship and training opportunities. Combining solid theoretical knowledge with diverse hands-on rotational experience to support patient rehabilitation and recovery.
+        </p>
+        <div class="hero-ctas">
+          <a href="#experience" class="btn btn-primary">
+            <span>Explore Experience</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="assets/sreejith_resume.pdf" class="btn btn-secondary" download>
+            <i data-lucide="download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Interactive Stat cards in Hero -->
+      <div class="hero-stats-wrapper">
+        <div class="stat-card reveal-up">
+          <div class="stat-icon"><i data-lucide="graduation-cap"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">7+</span>
+            <span class="stat-label">Semesters Completed</span>
+          </div>
+        </div>
+        <div class="stat-card reveal-up" style="animation-delay: 0.15s;">
+          <div class="stat-icon"><i data-lucide="shield-check"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Rotational Specialties</span>
+          </div>
+        </div>
+        <div class="stat-card reveal-up" style="animation-delay: 0.3s;">
+          <div class="stat-icon"><i data-lucide="award"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">About Me</span>
+          <h2 class="section-title">Career Objective & Details</h2>
+        </div>
+        
+        <div class="about-grid">
+          <!-- Text and Objective Column -->
+          <div class="about-text-column">
+            <h3 class="about-highlight-title">Dedicated, Motivated & Compassionate</h3>
+            <p class="about-objective-text">
+              Dedicated, highly motivated, and compassionate B.Sc Nursing student with a strong academic foundation across 7 completed semesters. Seeking an internship or clinical opportunity in a reputable healthcare organization to enhance clinical competencies, apply core theoretical knowledge to practical patient care, and actively contribute to a dynamic, high-standard medical environment.
+            </p>
+            <div class="about-quote">
+              <i data-lucide="quote" class="quote-icon"></i>
+              <p>Nursing is not just a profession; it is an art of caring, guided by science and driven by empathy.</p>
+            </div>
+          </div>
+
+          <!-- Personal Information Card -->
+          <div class="about-details-card glass-card">
+            <h3 class="card-title"><i data-lucide="user"></i> Personal Details</h3>
+            <ul class="details-list">
+              <li>
+                <span class="detail-label"><i data-lucide="calendar"></i> Date of Birth:</span>
+                <span class="detail-value">23 October 2003 (22 Years)</span>
+              </li>
+              <li>
+                <span class="detail-label"><i data-lucide="user-check"></i> Father's Name:</span>
+                <span class="detail-value">Bijukumar</span>
+              </li>
+              <li>
+                <span class="detail-label"><i data-lucide="smile"></i> Gender / Nationality:</span>
+                <span class="detail-value">Male / Indian</span>
+              </li>
+              <li>
+                <span class="detail-label"><i data-lucide="map-pin"></i> Location:</span>
+                <span class="detail-value">Nedumkandam, Idukki, Kerala</span>
+              </li>
+              <li>
+                <span class="detail-label"><i data-lucide="languages"></i> Languages:</span>
+                <span class="detail-value">English, Malayalam, Kannada</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Skillset</span>
+          <h2 class="section-title">Professional & Technical Competencies</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Column 1: Clinical Competencies -->
+          <div class="skills-category-card glass-card">
+            <div class="card-header-icon"><i data-lucide="activity"></i></div>
+            <h3 class="category-title">Nursing & Clinical Competencies</h3>
+            <ul class="skills-list">
+              <li><i data-lucide="check-circle" class="skill-check"></i> Patient Health Assessment</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Vital Signs Monitoring</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Medication Administration & Safety</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Infection Prevention & Control Protocols</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> First Aid & Emergency Care Support</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Detailed Clinical Documentation & Reporting</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Patient/Family Health Education & Counseling</li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Computer & Soft Skills -->
+          <div class="skills-category-card glass-card">
+            <div class="card-header-icon"><i data-lucide="users"></i></div>
+            <h3 class="category-title">Soft & Computer Skills</h3>
+            <ul class="skills-list">
+              <li><i data-lucide="check-circle" class="skill-check"></i> Professional & Patient Communication</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Deep Empathy & Active Listening</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Interdisciplinary Teamwork & Coordination</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Stress Management & Problem Solving</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Microsoft Word (Proficient)</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Microsoft PowerPoint (Proficient)</li>
+              <li><i data-lucide="check-circle" class="skill-check"></i> Microsoft Excel (Proficient)</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Languages & Communication -->
+          <div class="skills-category-card glass-card">
+            <div class="card-header-icon"><i data-lucide="message-square"></i></div>
+            <h3 class="category-title">Languages Profile</h3>
+            <div class="languages-wrapper">
+              <div class="language-item">
+                <div class="lang-info">
+                  <span class="lang-name">Malayalam</span>
+                  <span class="lang-level">Native</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+              </div>
+              
+              <div class="language-item">
+                <div class="lang-info">
+                  <span class="lang-name">English</span>
+                  <span class="lang-level">Professional</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+              </div>
+
+              <div class="language-item">
+                <div class="lang-info">
+                  <span class="lang-name">Kannada</span>
+                  <span class="lang-level">Conversational</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinical Experience & Rotations Section -->
+    <section id="experience" class="experience-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Rotations</span>
+          <h2 class="section-title">Clinical Experience - AECS Pavan College</h2>
+        </div>
+
+        <!-- Interactive Layout for Rotations -->
+        <div class="experience-tabs-container">
+          <!-- Vertical Navigation Buttons -->
+          <div class="experience-tabs-menu" role="tablist">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-tab="med-surg">
+              <i data-lucide="activity"></i>
+              <span>Medical-Surgical</span>
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="community">
+              <i data-lucide="home"></i>
+              <span>Community Health</span>
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="pediatric">
+              <i data-lucide="baby"></i>
+              <span>Child Health (Pediatric)</span>
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="obstetrics">
+              <i data-lucide="heart-handshake"></i>
+              <span>Obstetrics & Gynae</span>
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="psychiatric">
+              <i data-lucide="brain"></i>
+              <span>Psychiatric (Mental Health)</span>
+            </button>
+          </div>
+
+          <!-- Tab Content Cards -->
+          <div class="experience-tab-contents">
+            <!-- Medical-Surgical Nursing -->
+            <div class="tab-content-panel active" id="med-surg" role="tabpanel">
+              <div class="panel-header">
+                <h3 class="panel-title">Medical-Surgical Nursing Rotation</h3>
+                <span class="panel-institution">AECS Pavan College of Nursing</span>
+              </div>
+              <p class="panel-description">
+                Provided standardized, empathetic patient care across acute, chronic, medical, and surgical wards. Routinely assisted medical professionals in clinical bedside procedures, post-operative monitoring, dressing, and patient stabilization.
+              </p>
+              <div class="panel-highlights">
+                <h4>Core Duties & Responsibilities:</h4>
+                <ul>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Assisted with wound dressings, post-op vitals tracking, and medication schedules.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Maintained infection control protocols during surgical preparations.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Guided patients in breathing exercises, mobility recovery, and pain management.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Community Health Nursing -->
+            <div class="tab-content-panel" id="community" role="tabpanel">
+              <div class="panel-header">
+                <h3 class="panel-title">Community Health Nursing Rotation</h3>
+                <span class="panel-institution">AECS Pavan College of Nursing</span>
+              </div>
+              <p class="panel-description">
+                Gained comprehensive hands-on exposure to rural and urban community setups. Conducted structured home visits, personalized health assessments, targeted family counseling, community health promotion surveys, and actively assisted in localized immunization drives.
+              </p>
+              <div class="panel-highlights">
+                <h4>Core Duties & Responsibilities:</h4>
+                <ul>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Conducted family surveys on health hazards, sanitation, and hygiene.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Provided direct education on nutrition, clean water, and vaccination.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Collaborated with local healthcare bodies for vaccination drives.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Child Health (Pediatric) Nursing -->
+            <div class="tab-content-panel" id="pediatric" role="tabpanel">
+              <div class="panel-header">
+                <h3 class="panel-title">Child Health (Pediatric) Nursing Rotation</h3>
+                <span class="panel-institution">AECS Pavan College of Nursing</span>
+              </div>
+              <p class="panel-description">
+                Managed pediatric care modules, tracked growth parameters against baseline developmental charts, assisted with childhood vaccination programs, and offered child health guidance to parents.
+              </p>
+              <div class="panel-highlights">
+                <h4>Core Duties & Responsibilities:</h4>
+                <ul>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Tracked heights/weights to identify developmental lags.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Maintained pediatric vaccination records and dosage timelines.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Provided maternal guidance on breastfeeding, infant weaning, and immunization.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Obstetrics & Gynecological Nursing -->
+            <div class="tab-content-panel" id="obstetrics" role="tabpanel">
+              <div class="panel-header">
+                <h3 class="panel-title">Obstetrics & Gynecological Nursing Rotation</h3>
+                <span class="panel-institution">AECS Pavan College of Nursing</span>
+              </div>
+              <p class="panel-description">
+                Supported multi-stage clinical protocols including antenatal checks, intranatal observation, post-partum monitoring, neonate care, and gynecological surgical preparation.
+              </p>
+              <div class="panel-highlights">
+                <h4>Core Duties & Responsibilities:</h4>
+                <ul>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Monitored fetal heart rates and uterine activity in antenatal wards.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Supported neonate post-delivery checks: Apgar score, weight, initial feeds.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Managed surgical setup preps for gynecological procedures.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Psychiatric (Mental Health) Nursing -->
+            <div class="tab-content-panel" id="psychiatric" role="tabpanel">
+              <div class="panel-header">
+                <h3 class="panel-title">Psychiatric (Mental Health) Nursing Rotation</h3>
+                <span class="panel-institution">AECS Pavan College of Nursing</span>
+              </div>
+              <p class="panel-description">
+                Assisted in detailed psychological status examinations, therapeutic clinical communication, behavior monitoring, diagnostic support, and patient re-orientation through systematic daily living activities.
+              </p>
+              <div class="panel-highlights">
+                <h4>Core Duties & Responsibilities:</h4>
+                <ul>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Formulated mental status assessments (MSE) and recorded observations.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Engaged in non-judgmental, therapeutic clinical communication with patients.</li>
+                  <li><i data-lucide="plus" class="bullet-plus"></i> Supported rehabilitation routines and daily living re-orientation drills.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">Timeline</span>
+          <h2 class="section-title">Education History</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot"><i data-lucide="graduation-cap"></i></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">2022 - Present</span>
+              <h3 class="timeline-title">Bachelor of Science in Nursing (B.Sc Nursing)</h3>
+              <p class="timeline-subtitle">AECS Pavan College of Nursing, Kolar</p>
+              <p class="timeline-university">Affiliated with Rajiv Gandhi University of Health Sciences (RGUHS), Karnataka</p>
+              <div class="timeline-details">
+                <p><strong>Status:</strong> Semesters 1 to 7 Completed</p>
+                <p><strong>Academic Standing:</strong> Maintained consistent high marks across all semesters.</p>
+                <div class="gpa-badge-group">
+                  <span class="gpa-tag">4th Sem SGPA: 7.24 (Highest)</span>
+                  <span class="gpa-tag">6th Sem: 7.10</span>
+                  <span class="gpa-tag">5th Sem: 7.09</span>
+                  <span class="gpa-tag">1st & 2nd Sem: 7.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal-right">
+            <div class="timeline-dot"><i data-lucide="book-open"></i></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">Completed 2022</span>
+              <h3 class="timeline-title">Higher Secondary Course (HSE)</h3>
+              <p class="timeline-subtitle">GHSS Kallar Higher Secondary School</p>
+              <div class="timeline-details">
+                <span class="score-badge"><i data-lucide="percent"></i> Score: 83%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot"><i data-lucide="award"></i></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">Completed 2020</span>
+              <h3 class="timeline-title">Secondary School Leaving Certificate (SSLC)</h3>
+              <p class="timeline-subtitle">GHSS Kallar Higher Secondary School</p>
+              <div class="timeline-details">
+                <span class="score-badge"><i data-lucide="percent"></i> Score: 93%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Research Section -->
+    <section id="certifications" class="certifications-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-grid">
+          <!-- Certifications Column -->
+          <div class="certifications-col">
+            <div class="section-header">
+              <span class="section-badge">Credentials</span>
+              <h2 class="section-title">Certifications & Licenses</h2>
+            </div>
+            
+            <div class="certs-list-wrapper">
+              <div class="cert-item-card glass-card">
+                <div class="cert-icon"><i data-lucide="activity-square"></i></div>
+                <div class="cert-info">
+                  <h3>Basic Life Support (BLS) & Advanced Life Support (ALS)</h3>
+                  <p>Clinical Resuscitation Training</p>
+                </div>
+              </div>
+
+              <div class="cert-item-card glass-card">
+                <div class="cert-icon"><i data-lucide="baby"></i></div>
+                <div class="cert-info">
+                  <h3>Integrated Management of Neonatal & Childhood Illness (IMNCI)</h3>
+                  <p>Management Module</p>
+                </div>
+              </div>
+
+              <div class="cert-item-card glass-card">
+                <div class="cert-icon"><i data-lucide="heart-handshake"></i></div>
+                <div class="cert-info">
+                  <h3>Skilled Birth Attendance (SBA) Module Certificate</h3>
+                  <p>Maternal and Newborn Care</p>
+                </div>
+              </div>
+
+              <div class="cert-item-card glass-card">
+                <div class="cert-icon"><i data-lucide="monitor"></i></div>
+                <div class="cert-info">
+                  <h3>Microsoft Office Certification</h3>
+                  <p>Proficient in MS Word, MS PowerPoint, and MS Excel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Research Column -->
+          <div class="research-col">
+            <div class="section-header">
+              <span class="section-badge">Research</span>
+              <h2 class="section-title">Academic Research</h2>
+            </div>
+
+            <div class="research-card glass-card">
+              <div class="research-badge"><i data-lucide="search"></i> Research Topic</div>
+              <h3 class="research-topic">
+                "A descriptive study to assess the level of knowledge regarding alcohol abuse among adolescents (11-19yrs) in selected areas of Kolar, Karnataka."
+              </h3>
+              <p class="research-details">
+                This study evaluates risk awareness, knowledge parameters, and lifestyle factors related to teenage alcohol consumption in rural and semi-urban communities of Kolar. Focuses on developing target-specific community counseling frameworks and preventive educational interventions.
+              </p>
+              <div class="research-footer">
+                <span><i data-lucide="book-open"></i> Key Areas: Public Health, Mental Health, Teen Counseling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-badge">Get in Touch</span>
+          <h2 class="section-title">Contact & Communication</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Information Column -->
+          <div class="contact-info-column">
+            <h3>Let's Connect!</h3>
+            <p>I am seeking clinical rotations, internships, or professional roles within your healthcare organization. Feel free to reach out via any of the channels below.</p>
+            
+            <div class="contact-methods">
+              <a href="mailto:sreejithbijukumar@gmail.com" class="contact-method-card glass-card">
+                <div class="method-icon"><i data-lucide="mail"></i></div>
+                <div class="method-details">
+                  <span class="method-title">Email Me</span>
+                  <span class="method-value">sreejithbijukumar@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+918590893012" class="contact-method-card glass-card">
+                <div class="method-icon"><i data-lucide="phone"></i></div>
+                <div class="method-details">
+                  <span class="method-title">Call / WhatsApp</span>
+                  <span class="method-value">+91 85908 93012</span>
+                </div>
+              </a>
+
+              <div class="contact-method-card glass-card">
+                <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                <div class="method-details">
+                  <span class="method-title">Location</span>
+                  <span class="method-value">Nedumkandam, Idukki, Kerala</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-column glass-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Inquiry about Clinical Internship" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <i data-lucide="send"></i>
+              </button>
+              
+              <div id="form-feedback" class="form-feedback hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-logo"><i data-lucide="heart-pulse"></i> Sreejith<span>.B</span></span>
+        <p>Providing compassionate patient care and striving for clinical excellence.</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2026 Sreejith Bijukumar. All rights reserved.</p>
+        <p class="footer-subtext">Built with premium Vanilla CSS & JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
